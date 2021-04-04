@@ -1,6 +1,17 @@
 {
     "require": {
         "yidas/yii2-bower-asset": "2.0.13.1",
-        "yiisoft/yii2": "*"
+        "yiisoft/yii2": "*",
+        "codeception/codeception": "*",
+        "codeception/module-phpbrowser": "^1.0.0",
+        "codeception/module-asserts": "^1.0.0",
+        "yiisoft/yii2-bootstrap": "*"
+    },
+    "config": {
+        "fxp-asset":{
+            "installer-paths":{
+                "bower-asset-library": "vendor/yidas/yii2-bower-asset/bower"
+            }
+        }
     }
 }

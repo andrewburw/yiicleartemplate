@@ -1,3 +1,9 @@
+<?php 
+
+use \yii\bootstrap\NavBar;
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +13,16 @@
     <title>Test site yiiii</title>
 </head>
 <body>
+<?php 
+        NavBar::begin([
+            'brandLabel'=> 'SUPER',
+            'brandUrl' =>Yii::$app->homeUrl,
+            'options'  => [
+                'class' => 'navbar-default navbar-fixed-top'
+            ]
+        ]);
+        NavBar::end();
+?>
     <?= $content ?>
 </body>
-</html>
+</html> 
